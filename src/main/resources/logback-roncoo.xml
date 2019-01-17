@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <property name="PATTERN" value="%boldGreen(%-3(%d{HH:mm:ss}) %-5level[%thread] %c [%L]) %msg%n"/>
+  <!-- <property name="TEST_FILE_PATH" value="/home/lkit/tmp/logs"/>
+  <property name="PRO_FILE_PATH" value="/home/lkit/tmp/logs"/> -->
+
+  <springProfile name="dev">
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+      <encoder>
+        <pattern>${PATTERN}</pattern>
+      </encoder>
+    </appender>
+
+    <logger name="hello" level="debug" />
+    <root level="info">
+      <appender-ref ref="CONSOLE"/>
+    </root>
+    
+  </springProfile>
+  
+  
+</configuration>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "spring.application.secret",
+    "type": "java.lang.String",
+    "description": ""
+  },
+  {
+    "name": "spring.application.name",
+    "type": "java.lang.String",
+    "description": "names"
+  }
+]}

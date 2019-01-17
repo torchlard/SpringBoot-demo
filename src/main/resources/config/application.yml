@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: demoservice
+    secret: ${random.value}
+server:
+  port: 8090    
+
+# ---
+# spring:
+#   profiles: dev
+
+# server:
+#   port: 8002
+
+
+
+
