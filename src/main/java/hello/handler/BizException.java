@@ -17,6 +17,7 @@ public class BizException {
   @ResponseStatus(HttpStatus.OK)
   public ModelAndView processException(RuntimeException ex) {
     logger.info("custom runtime exception");
+    logger.error(ex.getMessage());
     
     ModelAndView m = new ModelAndView();
     m.addObject("roncooException", ex.getMessage());
@@ -28,6 +29,7 @@ public class BizException {
   @ResponseStatus(HttpStatus.OK)
   public ModelAndView processException(Exception ex) {
     logger.info("custom exception");
+    logger.error(ex.getMessage());
 
     ModelAndView m = new ModelAndView();
     m.addObject("roncooException", ex.getMessage());

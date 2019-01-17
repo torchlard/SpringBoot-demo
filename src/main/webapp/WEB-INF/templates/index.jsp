@@ -13,6 +13,14 @@
 
     <c:url value="http://www.roncoo.com" var="url"/>
     Spring URL: ${springUrl}
+
+    <form method="POST" enctype="multipart/form-data" action="/file/upload">
+      file: <input type="file" name="roncoFile" />
+      <input type="submit" value="submit"/>
+    </form>
+    
+    
+    
   </body>
   
   <script type="text/javascript">

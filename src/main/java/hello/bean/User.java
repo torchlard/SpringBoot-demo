@@ -28,7 +28,7 @@ public class User {
   }
 
   public String toString(){
-    return Integer.toString(id) + " " + name + " " + date.toString();
+    return "user: " + id + " " + name + ", createTime=" + date.toString();
   }
   
 }
